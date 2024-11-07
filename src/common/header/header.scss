@@ -1,0 +1,112 @@
+header {
+    // padding: 0 2.1vw;
+    padding: 0 2.5rem;
+    // top: 3rem;
+    top: 2.5rem;
+    left: 0;
+    z-index: 9999;
+    position: sticky;
+    height: 59px;
+
+    .header-main {
+        height: 100%;
+        background-color: rgb(var(--color-white) / var(--tw-bg-opacity));
+        border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+        border: 1px solid;
+        display: grid;
+        grid-template-columns: repeat(24, minmax(0, 1fr));
+        column-gap: 1rem;
+
+        .header-logo-main {
+            grid-column: span 2 / span 2;
+            border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+            border-right: 1px solid;
+
+            a {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    max-width: 5.5rem;
+                    max-height: 1.9rem;
+                }
+            }
+        }
+
+        .products-div-main {
+            margin: 0 -1rem;
+            width: 100%;
+            grid-column: span 5 / span 5;
+            border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+            border-right: 1px solid;
+            display: flex;
+            width: 100%;
+
+            a {
+                width: 100%;
+            }
+        }
+
+        .header-right-content-main {
+            grid-column: span 17 / span 17;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            margin: 0 0 0 -2rem;
+
+            .look-pro-sign-button-header-main {
+                display: flex;
+                height: 100%;
+                border-right: 1px solid;
+                border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+
+                .look-button-header,
+                .pro-button-header {
+                    border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+                    border-left: 1px solid;
+                    height: 100%;
+                }
+
+                .pro-button-header {
+                    border-right: 1px solid;
+                }
+
+                .sign-button-header {
+                    height: 100%;
+                }
+            }
+
+            .cart-button-main {
+                height: 100%;
+                border-right: 1px solid;
+                border-color: rgb(var(--color-black) / var(--tw-border-opacity));
+                position: relative;
+
+                .cart-items-number {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding-bottom: .1rem;
+                    padding-right: .3rem;
+                    padding-left: .4rem;
+                    background-color: rgb(var(--color-black) / var(--tw-bg-opacity));
+
+                    span {
+                        letter-spacing: 1px;
+                        line-height: 120%;
+                        font-size: .7rem;
+                        font-weight: 700;
+                        color: rgb(var(--color-white) / var(--tw-text-opacity));
+                    }
+                }
+            }
+
+            .language-button-main {
+                height: 100%;
+            }
+        }
+    }
+}

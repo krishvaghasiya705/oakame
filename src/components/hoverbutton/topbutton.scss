@@ -1,0 +1,111 @@
+.common-top-button-div-alignment {
+    position: relative;
+    perspective: 1000px;
+    transition-duration: .3s;
+    transition-property: color, background-color, transform;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+    text-transform: uppercase;
+    overflow: hidden;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 120%;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+        .common-top-button-div {
+            opacity: 0;
+            transform: translateY(-100%) rotateX(90deg);
+        }
+
+        .common-top-button-div-sc {
+            --tw-translate-y: 0;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+            .common-top-button-div-panel {
+                --tw-translate-y: 0;
+                transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+
+                .common-top-button-div-panel-button {
+                    opacity: 1;
+                    transform: translateY(0) rotateX(0);
+                    transition-delay: .12s;
+                }
+            }
+        }
+    }
+
+    .common-top-button-div {
+        transition: transform .6s var(--ease-out), opacity .45s var(--ease-out);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: .5rem;
+        color: var(--color-black-light);
+    }
+
+    .common-top-button-div-sc {
+        --tw-translate-y: 105%;
+        perspective: 1000px;
+        transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+        transition-duration: .6s;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+
+        .common-top-button-div-panel {
+            --tw-translate-y: -105%;
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+            transition-duration: .6s;
+            transition-property: transform;
+            transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+            transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            color: rgb(var(--color-white)/var(--tw-text-opacity));
+            background-color: rgb(var(--color-black) / var(--tw-bg-opacity));
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            .common-top-button-div-panel-button {
+                opacity: 0;
+                transform: translateY(100%) rotateX(-90deg);
+                transition-delay: 0s;
+                transition: transform .6s var(--ease-out), opacity .45s var(--ease-out);
+                column-gap: .5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                span {
+                    display: inline-block;
+                }
+
+                svg {
+                    color: rgb(var(--color-white) / var(--tw-text-opacity));
+                    rotate: -180deg;
+                    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+                    width: .8rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

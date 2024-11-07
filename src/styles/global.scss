@@ -1,0 +1,15 @@
+@use "../styles/theme.scss" as *;
+
+body {
+    background-color: rgb(var(--color-white) / var(--tw-bg-opacity));
+}
+
+@font-face {
+    font-family: "BwGradual, sans-serif";
+    // src: url('../assets/fonts/BwGradual-Bold.825cca.woff2') format('woff2'),
+    //     url('../assets/fonts/BwGradual-Medium.3e427b.woff2') format('woff2'),
+    // url('../assets/fonts/BwGradual-Regular.028857.woff2') format('woff2');
+    src: url('../assets/fonts/BwGradual-Regular.028857.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
