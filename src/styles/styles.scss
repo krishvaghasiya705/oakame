@@ -1,0 +1,45 @@
+.products-square-one,
+.products-square-two {
+    position: absolute;
+    top: .8rem;
+    background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    display: block;
+    height: .4rem;
+    max-height: .4rem;
+    max-width: .4rem;
+    min-height: .4rem;
+    min-width: .4rem;
+    transition-duration: .3s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+    width: .4rem;
+    z-index: 1;
+}
+.products-square-three,
+.products-square-four {
+    position: absolute;
+    bottom: .8rem;
+    background-color: rgb(var(--color-black)/var(--tw-bg-opacity));
+    display: block;
+    height: .4rem;
+    max-height: .4rem;
+    max-width: .4rem;
+    min-height: .4rem;
+    min-width: .4rem;
+    transition-duration: .3s;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.23, 1, .32, 1);
+    width: .4rem;
+    z-index: 1;
+}
+
+.products-square-one,
+.products-square-three {
+    left: 0.8rem;
+}
+.products-square-two,
+.products-square-four {
+    right: 0.8rem;
+}

@@ -1,4 +1,5 @@
 @use "../styles/theme.scss" as *;
+@use "../styles/styles.scss" as *;
 
 body {
     background-color: rgb(var(--color-white) / var(--tw-bg-opacity));
@@ -12,4 +13,9 @@ body {
     src: url('../assets/fonts/BwGradual-Regular.028857.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
+}
+
+body:not(.wp-admin) ::selection {
+    background-color: rgb(var(--color-black) / 1);
+    color: rgb(var(--color-white) / 1);
 }

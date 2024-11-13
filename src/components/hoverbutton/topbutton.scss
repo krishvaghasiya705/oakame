@@ -19,6 +19,7 @@
     align-items: center;
     cursor: pointer;
 
+    &.common-top-button-div-alignment-active,
     &:hover {
         .common-top-button-div {
             opacity: 0;
